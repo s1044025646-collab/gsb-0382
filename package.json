@@ -1,0 +1,18 @@
+{
+  "name": "rect-union-area",
+  "version": "1.0.0",
+  "private": true,
+  "description": "轴对齐矩形并集面积与扫描条带解释后端（TypeScript + Node.js + SQLite）",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"dist/test/*.test.js\"",
+    "start": "npm run build && node dist/src/cli.js serve",
+    "demo": "npm run build && node dist/src/cli.js demo",
+    "cli": "npm run build && node dist/src/cli.js"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.5.0"
+  }
+}
