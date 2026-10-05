@@ -1,0 +1,21 @@
+{
+  "name": "rect-union-area",
+  "version": "1.0.0",
+  "description": "Axis-aligned rectangle union area service with sweep-band explanation (API + CLI)",
+  "main": "dist/cli.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"dist/test/*.test.js\"",
+    "start": "node dist/api.js",
+    "cli": "node dist/cli.js",
+    "demo": "node dist/cli.js demo"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^7.0.2"
+  }
+}
